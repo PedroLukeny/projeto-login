@@ -7,3 +7,48 @@
     Lilás: #5f2c82
 */
 
+:root{
+    --lilas: #5f2c82;
+    --verde: #49a09d;
+}
+
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color: var(--lilas);
+    height:100vh;
+    width:100vw;
+}
+
+main{
+    position: relative;
+    width:100vw;
+    height:100vh;
+}
+
+main section#login{
+    background-color: #fff;
+    width: 250px; height:500px; /*para celular*/
+    border-radius: 20px;
+    position:absolute;
+    top:50%; left:50%;
+    transform: translate(-50%,-50%);
+    overflow:hidden; /*Tudo que tiver fora da borda ficará escondido. Sem isso a imagem fica sem border radius no top*/
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+main section#login > div#img{
+    height:200px;
+    background: var(--lilas) url(../imagens/building2.jpg) no-repeat;
+    background-size: cover;
+    background-position: left bottom;
+}
+
+main section#login > div#formulario{
+    padding: 10px;
+}   
