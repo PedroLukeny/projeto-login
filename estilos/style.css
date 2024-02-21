@@ -40,6 +40,8 @@ main section#login{
     transform: translate(-50%,-50%);
     overflow:hidden; /*Tudo que tiver fora da borda ficará escondido. Sem isso a imagem fica sem border radius no top*/
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    transition: width .3s, height .3s;
+    transition-timing-function: ease; /*A animação fica mais suave*/
 }
 
 main section#login > div#img{
